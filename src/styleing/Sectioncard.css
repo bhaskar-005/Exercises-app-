@@ -1,0 +1,23 @@
+.main-card-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .main-card-div {
+    display: inline-block;
+    margin-right: 20px;
+    /* Add other styles like width, height, and padding as needed */
+  }
+  
+  .pic {
+    max-width: 100px;
+    /* Styles for your image */
+  }
+  
+  .bodypart-text {
+    white-space: nowrap;
+    margin: 0;
+    /* Styles for the text */
+  }
+  
