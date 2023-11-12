@@ -1,0 +1,23 @@
+.main-home-exercise-div{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-top: 100px;
+}
+.h1-main{
+    margin: 0;
+    padding: 0;
+}
+.h1-highlite{
+    color: var(--first-color);
+    margin: 0;
+    padding: 0;
+}
+.input-box{
+    padding: 10px;
+    width: 40vh;
+}
+.input-button{
+    padding: 10px;
+    width: 60wh;
+}

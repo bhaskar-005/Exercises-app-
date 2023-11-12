@@ -1,7 +1,8 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
+import Loading from "./Loading";
 
-const ResultExercise = ({ bodypart }) => {
+const ResultExercise = ({ bodypart,load}) => {
   const navigate = useNavigate();
 
   // navigate function
@@ -10,12 +11,15 @@ const ResultExercise = ({ bodypart }) => {
   };
   
   return (
-    <div id="resultExercise">
+    load ?(
+      <Loading/>
+    ):(
+      <div id="resultExercise">
       <h1>showing results</h1>
       {bodypart?.map((bodydata, index) => (
         <Link to={`/exercise/${bodydata.id}`}>
         <div
-          key={index}
+          key={bodydata.id}
         >
           <img src={bodydata.gifUrl} alt="img" />
           <h3>{bodydata.name}</h3>
@@ -23,6 +27,7 @@ const ResultExercise = ({ bodypart }) => {
          </Link>
       ))}
     </div>
+    )
   );
 };
 

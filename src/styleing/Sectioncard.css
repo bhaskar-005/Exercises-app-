@@ -1,12 +1,10 @@
 .main-card-container {
-    display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
+  cursor: pointer;
+  filter: brightness(240%);
   }
   
   .main-card-div {
-    display: inline-block;
-    margin-right: 20px;
+    margin-right: 25px;
     /* Add other styles like width, height, and padding as needed */
   }
   
@@ -16,8 +14,10 @@
   }
   
   .bodypart-text {
-    white-space: nowrap;
-    margin: 0;
-    /* Styles for the text */
+  margin: 0;
+   justify-content: center;
   }
-  
+  .section-div{
+    display: flex;
+    justify-content: center;
+  }

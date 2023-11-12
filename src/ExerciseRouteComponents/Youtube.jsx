@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import { YoutubeData } from '../utils/YoutubeFetch';
-import { useParams } from 'react-router-dom';
-import FatchData from '../utils/FatchData';
+import React, { useEffect, useState } from "react";
+import { YoutubeData } from "../utils/YoutubeFetch";
+import { useParams } from "react-router-dom";
+import FatchData from "../utils/FatchData";
+import "./youtube.css";
 
 const Youtube = () => {
-  const [data,setdata] = useState([])
+  const [data, setdata] = useState([]);
   const { id } = useParams();
 
   useEffect(() => {
@@ -18,11 +19,10 @@ const Youtube = () => {
           `https://youtube-search-and-download.p.rapidapi.com/search?query=${exerciseData.name}`
         );
 
-        setdata(youtubeData.contents); 
-        console.log(data); 
-       
+        setdata(youtubeData.contents);
+        console.log(data);
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error("Error fetching data:", error);
       }
     };
 
@@ -32,25 +32,32 @@ const Youtube = () => {
   }, [id]);
 
   return (
-    <div>
-      <h1>Related YouTube videos </h1>
-      {data.slice(0, 4).map((data) => (
-      <a 
-      key={data.video.videoId} 
-      href={`https://www.youtube.com/watch?v=${data.video.videoId}`} 
-      target='_blank' 
-      rel='noopener noreferrer'
-     >
-        <img src={data.video.thumbnails[0].url} alt="Thumbnail" />
-        <div>
-          <p>{data.video.lengthText}</p>
-        </div>
-        <div>
-          <p>By {data.video.channelName}</p>
-          <p>{data.video.publishedTimeText}</p>
-        </div>
-      </a>
-    ))}
+    <div className="youtube-video-main-div">
+      <h1 className="header-youtube">Related YouTube videos </h1>
+      <div className="youtube-video-div-top">
+        {data.slice(0, 8).map((data) => (
+          <a
+            key={data.video.videoId}
+            href={`https://www.youtube.com/watch?v=${data.video.videoId}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          > <div className="border-div">
+            <div className="youtube-video-div">
+              <img
+                className="youtube-video-img"
+                src={data.video.thumbnails[0].url}
+                alt="Thumbnail"
+              />
+              <div className="length-text-video">{data.video.lengthText}</div>
+              </div> 
+              <div className="text-video-name">
+              <p className="p-tag-video">By {data.video.channelName}</p>
+              <p className="p-tag-video">{data.video.publishedTimeText}</p>
+             </div>
+           </div>
+          </a>
+        ))}
+      </div>
     </div>
   );
 };
