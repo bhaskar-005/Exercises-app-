@@ -53,7 +53,7 @@ const Exercise = () => {
     </div></div>
     <Section data={section} setbodypart={setbodypart} load={load}/>
     
-    {bodypart ? (
+    {bodypart && bodypart.length>0 ?(
       <ResultExercise bodypart={bodypart} load={load} />
     ) : (
       <div>no data found for "{search}"</div>

@@ -5,8 +5,6 @@ import "../styleing/color.css";
 import Hero from "../pngs/hero-png.png";
 
 
-
-
 const Home = () => {
 
 
@@ -21,10 +19,10 @@ const Home = () => {
           <p className="fit-p">
             Check out the most effective exercises personalized to you
           </p>
-           <button>Exercises</button>
+           <button className="hero-button">Exercises</button>
           </div>
            <img src={Hero} alt="hero" className="hero-pic" draggable="false" />
-        
+          
           </div>
           <Exercise/>
           </>

@@ -17,6 +17,7 @@ const FatchData = async (url) => {
   } catch (error) {
     console.log(error);
     console.log("not able to fatch");
+    return error;
   }
 };
 export default FatchData;

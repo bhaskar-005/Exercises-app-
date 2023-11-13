@@ -23,11 +23,10 @@
     border-radius: 8px;
 }
 .exercise-button:hover{
-    background-color: var(--first-color);
-
+    background-color: rgb(1, 37, 66);
 }
 .hero-pic{
- height: 70vh;
+ height: 500px;
  margin: 0;
 }
 .exercise{
@@ -40,4 +39,37 @@
 .div-text{
     margin-top: 50px;
     margin-left: 120px;
+}
+.hero-button{
+    padding: 14px;
+    margin-top: 30px;
+    background-color: var(--second-color);
+    border: none;
+    color: aliceblue;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+@media only screen and (max-width: 800px) {
+    .hero-div{
+       display: flex;
+       flex-direction: column;
+    }
+    .div-text{
+        margin-top: 0;
+        margin-left: 24px;
+    }
+    .fit-h2{
+     font-size: 2rem;
+    }
+    .fit-h1{
+     font-size: 2.8rem;
+     margin-bottom: 40px;
+    }
+    .hero-pic{
+        width: 70;
+        height: auto;
+        margin: 10px;
+       }
 }

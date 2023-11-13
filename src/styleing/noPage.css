@@ -1,0 +1,9 @@
+.nopage-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+.nopage-text{
+    text-align: center;
+}

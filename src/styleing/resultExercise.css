@@ -1,0 +1,48 @@
+.exercise-top-div{
+    margin-top: 30px;
+    padding-top: 30px;
+    display: flex;
+    text-align: center;
+}
+.result-exercise-div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.exercise-card-div { 
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+   background-color: aliceblue;
+   padding: 10px;
+   margin: 20px;
+   /* border: 1px solid rgba(0, 0, 0, 0.149); */
+   justify-content: center;
+   align-items: center; 
+}
+.exercise-card-div img{
+    max-width: 310px;
+}
+.exercise-card-div h3{
+ max-width: 230px;
+ color: rgba(0, 0, 0, 0.812);
+}
+.exercise-card-div-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.exercise-card-div-button button{
+    padding: 10px 20px;
+    border: 1px solid rgba(165, 165, 165, 0.182);
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--first-color);
+    color: aliceblue;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .exercise-card-div img{
+        width: 40vh;
+    }
+  }

@@ -1,0 +1,51 @@
+.About-text{
+    color: var(--second-color);
+}
+.about-text-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10% ;
+    margin-right: 10%;
+    min-height: 600px;
+}
+.about-p-teg{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.729);
+    transition: 0.4s;
+}
+.kilimanjaro_social_links{
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+.kilimanjaro_social_links a{
+    border: 2px solid rgb(83, 83, 83);
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: black;
+    font-weight: 500;
+}
+
+.kilimanjaro_social_links a:hover{
+    background-color: rgba(119, 119, 119, 0.248);
+}
+.kilimanjaro_part h3{
+  justify-content: center;
+  margin: 20px;
+  color: var(--second-color);
+  text-align: center;
+  padding-bottom: 20px;
+}
+.row-container{
+    margin-top: 30px;
+    text-align: center;
+}
+.buld{
+    font-weight: 600;
+    color: black;
+}

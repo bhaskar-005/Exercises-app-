@@ -1,23 +1,35 @@
 .main-card-container {
   cursor: pointer;
   filter: brightness(240%);
+  padding: 10px;
   }
   
   .main-card-div {
     margin-right: 25px;
-    /* Add other styles like width, height, and padding as needed */
   }
   
   .pic {
     max-width: 100px;
-    /* Styles for your image */
   }
   
   .bodypart-text {
-  margin: 0;
+   margin: 0;
    justify-content: center;
   }
   .section-div{
     display: flex;
     justify-content: center;
+    margin-top: 40px;
+    background-color: rgb(212, 254, 254);
   }
+
+.section-div {
+  overflow-x: auto;
+}
+
+.scroll-container {
+  display: flex;
+  white-space: nowrap;
+  padding-bottom: 10px;
+}
+
